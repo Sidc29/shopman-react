@@ -24,10 +24,10 @@ Check out the live demo [here](https://shopman.vercel.app/).
 
 To get started with this project, follow these steps:
 
-1. Clone this repository to your local machine. (git clone https://github.com/Sidc29/shopman-react.git)
-2. Install the required dependencies. (npm install)
-3. Start the development server. (npm run dev)
-4. Open your web browser and navigate to `http://localhost:5173`.
+1. Clone this repository to your local machine. `git clone https://github.com/Sidc29/shopman-react.git`
+2. Install the required dependencies. `npm install`
+3. Start the development server. `npm run dev`
+4. Open your web browser and navigate to `http://localhost:5173` (depends on the PORT you're running).
 
 ## Usage
 
