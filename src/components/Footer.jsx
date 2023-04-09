@@ -6,6 +6,7 @@ export const Footer = () => {
       <span className="text-white text-sm opacity-50">Made by </span>
       <a
         href="http://shiddharth-portfolio.vercel.app/"
+        target="_blank"
         className="text-white text-sm opacity-50 hover:opacity-100 font-medium"
       >
         Siddharth

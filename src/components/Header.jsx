@@ -15,12 +15,12 @@ export const Header = () => {
 
   return (
     <header className="lg:max-w-[80%] lg:mx-auto">
-      <nav className="flex flex-row justify-between items-center p-3 bg-[#4D4D4D] lg:rounded-b-lg shadow-lg">
+      <nav className="flex flex-row justify-between items-center p-3 bg-[#4D4D4D] lg:rounded-b-lg shadow-lg ">
         <Link to="/" className="flex flex-row items-center gap-3">
           <img src={Logo} alt="shopping cart image" className="w-8 h-auto" />
           <span className="text-xl font-semibold text-slate-100">ShopMan</span>
         </Link>
-        <div className="flex flex-row gap-2 max-sm:hidden">
+        <div className="flex flex-row gap-2 max-sm:hidden ">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -38,8 +38,18 @@ export const Header = () => {
             Cart
           </NavLink>
         </div>
-        <Link to="/cart" className="text-lg text-slate-100">
-          <ShoppingCartIcon />: {cartList.length}
+        <Link
+          to="/cart"
+          className={`text-lg text-slate-100 ${
+            cartList.length > 0 && "px-[41.8px]"
+          }`}
+        >
+          <ShoppingCartIcon />:{" "}
+          {cartList.length > 0 ? (
+            cartList.length
+          ) : (
+            <span className="text-base">Cart is empty</span>
+          )}
         </Link>
       </nav>
     </header>
